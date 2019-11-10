@@ -6,3 +6,6 @@ http://localhost:8080/RESTWS/rs/service/insert/bus/01-01-2019/12:20PM/GreenLine/
 
 --@QueryParam
 http://localhost:8080/RESTWS/rs/service/query?ticket_type=bus&date=01-01-2019&time=12:20PM&name=GreenLine&location=Dhaka&price=1500
+
+--@MatrixParam
+http://localhost:8080/RESTWS/rs/service/matrix;ticket_type=bus;date=01-01-2019;time=12:20PM;name=GreenLine;location=Dhaka;price=1500
