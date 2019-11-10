@@ -1,0 +1,6 @@
+-- text 
+http://localhost:8080/RESTWS/rs/service/hi
+
+--@PathParam
+http://localhost:8080/RESTWS/rs/service/insert/bus/01-01-2019/12:20PM/GreenLine/Dhaka/1500
+
