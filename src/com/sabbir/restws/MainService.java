@@ -1,7 +1,9 @@
 package com.sabbir.restws;
 
+import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.MatrixParam;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -52,6 +54,18 @@ public class MainService {
 		System.out.println(ticket_type + "\t" + date + "\t" + time + "\t" + name + "\t" + location + "\t" + price);
 
 		return "{\"status\":\"success!\"}";
+	}
+	
+	@POST
+	@Path("/form")
+	@Produces(MediaType.TEXT_HTML)
+	public String insertForm(@FormParam("ticket_type") String ticket_type, @FormParam("date") String date,
+			@FormParam("time") String time, @FormParam("name") String name,
+			@FormParam("location") String location, @FormParam("price") String price) {
+
+		System.out.println(ticket_type + "\t" + date + "\t" + time + "\t" + name + "\t" + location + "\t" + price);
+
+		return "<html><body bgcolor='#054'>success </body></html>";
 	}
 
 }

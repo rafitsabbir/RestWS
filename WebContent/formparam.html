@@ -1,16 +1,11 @@
--- text 
-http://localhost:8080/RESTWS/rs/service/hi
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Form Param Example</title>
+</head>
+<body>
 
---@PathParam
-http://localhost:8080/RESTWS/rs/service/insert/bus/01-01-2019/12:20PM/GreenLine/Dhaka/1500
-
---@QueryParam
-http://localhost:8080/RESTWS/rs/service/query?ticket_type=bus&date=01-01-2019&time=12:20PM&name=GreenLine&location=Dhaka&price=1500
-
---@MatrixParam
-http://localhost:8080/RESTWS/rs/service/matrix;ticket_type=bus;date=01-01-2019;time=12:20PM;name=GreenLine;location=Dhaka;price=1500
-
---@FormParam
 <form  method="post" action="rs/service/form">
 
 <table>
@@ -52,3 +47,6 @@ http://localhost:8080/RESTWS/rs/service/matrix;ticket_type=bus;date=01-01-2019;t
 </table>
 
 </form>
+
+</body>
+</html>
